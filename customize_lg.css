@@ -386,6 +386,7 @@ body{
 #my_gmap iframe{
 	-webkit-filter: grayscale(100%);
     filter: grayscale(100%);
+	-ms-filter: grayscale(100%);
 }
 
 
