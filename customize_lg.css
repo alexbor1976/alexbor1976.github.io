@@ -384,8 +384,8 @@ body{
 }
 
 #my_gmap iframe{
-	/* -webkit-filter: grayscale(100%); */
-    /* filter: grayscale(100%); */
+	-webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
 }
 
 
