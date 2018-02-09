@@ -6,11 +6,11 @@ body{
 	background-image: url("img/eisen_background.jpg");
 	background-repeat: no-repeat;
 	background-color: #72706F;
-	background-size: 100% auto;;
+	/* background-size: 100% auto;; */
 	
 	/* temp settings for testing */
-	/* background-size: 1200px 1091px; */
-	/* max-width: 1200px; */
+	background-size: 1200px 1091px;
+	max-width: 1200px;
 }
 
 .container-fluid {
@@ -60,6 +60,7 @@ body{
 }
 
 #my_phone_number{
+	text-decoration: none;
 	color: #7bbc00;
 	font-size: 16px;
 	font-weight: 600;
@@ -184,9 +185,11 @@ body{
 	z-index: 2; /*in order to draw underlying decoration icon deg45_1.png*/
 }
 
+#my_icons h1, h2, p{
+	color: #72706f;	
+}
+	
 #my_icons h1{
-	/* color: #72706f; */
-	color: lightgreen;
 	font-size: 48px;
 	font-weight: 800;
 	margin-top: 5px;
@@ -194,7 +197,6 @@ body{
 }
 
 #my_icons h2{
-	color: lightgreen;
 	font-size: 36px;
 	font-weight: 600;
 	margin-top: 0px;
@@ -202,7 +204,6 @@ body{
 }
 
 #my_icons p{
-	color: lightgreen;
 	font-size: 16px;
 	font-weight: 400;
 	margin-top: 0px;
