@@ -4,10 +4,10 @@
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
-<!-- <link rel="stylesheet" type="text/css" href="customize_lg.css"> -->
 	<link rel="stylesheet" media="screen and (max-width: 991px)" href="customize_mobile.css" />
 	<link rel="stylesheet" media="screen and (min-width: 992px)" href="customize_lg.css" />
 
@@ -18,18 +18,18 @@
 </head>
   
 <body>
-	<!-- ----------------------------------------------------------------------------------------
+	<!-- ========================================================================================
 				for mobile screens( xs, sm, md )
-		 ---------------------------------------------------------------------------------------- -->
+		 ======================================================================================== -->
 	<div class="container-fluid d-block d-lg-none d-xl-none">		 
-		<nav class="navbar navbar-expand-lg text-nowrap" role="navigation">
+		<nav class="navbar navbar-expand-lg text-nowrap">
 			<!-- header -->
 			<a class="navbar-brand" href="#">
 				<img src="img/logo_mobile.png" style="width:168px;height:23px;" alt="logotype">
 			</a>
 			
 			<div class="navbar-text ml-auto">		
-				<a href="#" id="my_link_to_english">EN</a>
+				<a href="#" id="my_link_to_english_mobile">EN</a>
 			</div>
 			
 			<!-- toggler -->
@@ -46,18 +46,18 @@
 				<div class="navbar-collapse collapse" id="my_navbar_mobile_view">
 					<div class="d-flex flex-column h-100 justify-content-between"> 
 						<div>
-							<ul class="navbar-nav" id="my_navbar_menu">
+							<ul class="navbar-nav" id="my_navbar_menu_mobile">
 								<li class="nav-item my_navbar_menu_li"><a class="nav-link my_navbar_menu_a" href="#">O NÁS</a></li>
 								<li class="nav-item my_navbar_menu_li"><a class="nav-link my_navbar_menu_a" href="#">SLUŽBY</a></li>
-									
-									<ul class="navbar-nav" id="my_navbar_submenu">
-										<li class="my_navbar_submenu_li"><a class="my_navbar_submenu_a" href="#">Demolácie</a></li>
-										<li class="my_navbar_submenu_li"><a class="my_navbar_submenu_a" href="#">Stavebný odpad</a></li>
-										<li class="my_navbar_submenu_li"><a class="my_navbar_submenu_a" href="#">Drvenie</a></li>
-										<li class="my_navbar_submenu_li"><a class="my_navbar_submenu_a" href="#">Kovový odpad</a></li>
-										<li class="my_navbar_submenu_li"><a class="my_navbar_submenu_a" href="#">Prenájom strojov</a></li>
-									</ul>
-								
+									<li>
+										<ul class="navbar-nav" id="my_navbar_submenu">
+											<li class="my_navbar_submenu_li"><a class="my_navbar_submenu_a" href="#">Demolácie</a></li>
+											<li class="my_navbar_submenu_li"><a class="my_navbar_submenu_a" href="#">Stavebný odpad</a></li>
+											<li class="my_navbar_submenu_li"><a class="my_navbar_submenu_a" href="#">Drvenie</a></li>
+											<li class="my_navbar_submenu_li"><a class="my_navbar_submenu_a" href="#">Kovový odpad</a></li>
+											<li class="my_navbar_submenu_li"><a class="my_navbar_submenu_a" href="#">Prenájom strojov</a></li>
+										</ul>
+									</li>
 								<li class="nav-item my_navbar_menu_li"><a class="nav-link my_navbar_menu_a" href="#">REFERENCIE</a></li>
 								<li class="nav-item my_navbar_menu_li"><a class="nav-link my_navbar_menu_a" href="#">PONUKA PRÁCE</a></li>
 								<li class="nav-item my_navbar_menu_li"><a class="nav-link my_navbar_menu_a" href="#">KONTAKTY</a></li>
@@ -66,9 +66,9 @@
 						
 						<div class="d-flex align-items-center" id="my_navbar_menu_phone">
 							<div>
-								<img src="img/smartphone.png" style="width:12px;height:18px;" alt="phone icon" id="my_phone_pict">
+								<img src="img/smartphone.png" style="width:12px;height:18px;" alt="phone icon" id="my_phone_pict_mobile">
 							</div>
-							<div id="my_phone_number">0917 610 774</div>	
+							<div id="my_phone_number_mobile">0917 610 774</div>	
 						</div>
 					</div>	
 				</div>
@@ -77,7 +77,7 @@
 			
 			<div class="col-4">
 				<!-- links:	DEMOLÁCIE, STAVEBNÝ ODPAD, DRVENIE, KOVOVÝ ODPAD, PRENÁJOM STROJOV -->
-				<div id="my_second_links_bar" role="navigation">
+				<div id="my_second_links_bar_mobile" role="navigation">
 					<ul class="nav d-flex flex-column">
 						<li class="align-self-center my_second_links_bar_li"><a class="my_second_links_bar_a" href="#">DEMOLÁCIE</a></li>
 						<li class="align-self-center my_second_links_bar_li"><a class="my_second_links_bar_a" href="#">STAVEBNÝ ODPAD</a></li>
@@ -100,91 +100,12 @@
 
 	
 	
-	<!-- ----------------------------------------------------------------------------------------
+	<!-- ========================================================================================
 				for large screens( lg & xl )
-		 ---------------------------------------------------------------------------------------- -->
+		 ======================================================================================== -->
 	<div class="container-fluid d-none d-lg-block d-xl-block">
 	
-		<!-- Navigation bar -->
-		<nav class="navbar navbar-expand-lg text-nowrap" role="navigation">
-			<!-- header -->
-			<a class="navbar-brand" href="#">
-				<img src="img/logo.png" style="width:220px;height:29px;" alt="logotype">
-			</a>
-			
-			<!-- navbar links -->
-			<div class="navbar-collapse collapse" id="my_navbar">
-				<ul class="navbar-nav nav-fill" id="my_navbar_menu">
-					<!-- just empty space, about 125px wide-->
-					<li class="nav-item" id="my_navbar_menu_first_empty"></li>
-					<li class="nav-item" id="my_navbar_menu_first_empty"></li>
-					<li class="nav-item" id="my_navbar_menu_first_empty"></li>
-					<li class="nav-item" id="my_navbar_menu_first_empty"></li>
-				
-					<!-- functional links -->
-					<li class="nav-item"><a class="nav-link" href="#">O NÁS</a></li>
-					<li class="nav-item"><a class="nav-link" href="#">SLUŽBY</a></li>
-					<li class="nav-item"><a class="nav-link" href="#">REFERENCIE</a></li>
-					<li class="nav-item"><a class="nav-link" href="#">PONUKA PRÁCE</a></li>
-					<li class="nav-item"><a class="nav-link" href="#">KONTAKTY</a></li>
-					
-					<!-- just empty space, about 100px wide-->
-					<li class="nav-item" id="my_navbar_menu_last_empty"></li>
-					<li class="nav-item" id="my_navbar_menu_last_empty"></li>
-					<li class="nav-item" id="my_navbar_menu_last_empty"></li>
-				</ul>
-			</div>
-			
-			<div class="navbar-text">		
-				<span>
-					<img src="img/smartphone.png" style="width:12px;height:18px;" alt="phone icon" id="my_phone_pict">
-				</span>
-				<span id="my_phone_number">0911 915 593</span>
-				<span> 
-					<a href="#" id="my_link_to_english">EN</a>
-				</span>
-			</div>
-		</nav>
-
-
-		<!-- upper corners: -->
-		<div class="d-flex justify-content-between" id="my_upper_corners">
-			<img src="img/corner2_start.png" style="width:20px;height:20px;" alt="corner icon">
-			<img src="img/corner2_end.png" style="width:20px;height:20px;" alt="corner icon">
-		</div>
-
 	
-		<!-- links:	DEMOLÁCIE, STAVEBNÝ ODPAD, DRVENIE, KOVOVÝ ODPAD, PRENÁJOM STROJOV -->
-		<div role="navigation" id="my_second_links_bar">
-			<div class="my_icons_background_image_anchor">
-				<img src="img/eisen_background_strips.png" class="my_decoration_icon" style="width:1200px;height:141px;" alt="decoration icon">
-			</div>
-		
-			<ul class="nav d-flex justify-content-center">
-				<li><a href="#">DEMOLÁCIE</a></li>
-				<li><a href="#">STAVEBNÝ ODPAD</a></li>
-				<li><a href="#">DRVENIE</a></li>
-				<li><a href="#">KOVOVÝ ODPAD</a></li>
-				<li><a href="#">PRENÁJOM STROJOV</a></li>
-			</ul>
-		</div>
-		
-	
-		<!-- ZBERNÝ DVOR, STAVEBNÉHO ODPADU, + ODVOZ -->
-		<div class="btn-group-vertical d-flex align-items-end" role="group" id="my_forward_keywords">
-			<button type="button" class="btn" id="my_collection_site">ZBERNÝ DVOR</button>
-			<button type="button" class="btn" id="my_building_waste">STAVEBNÉHO ODPADU</button>
-			<button type="button" class="btn" id="my_removal_plus">+ ODVOZ</button>
-		</div>
-	
-	
-		<!-- bottom corners:-->
-		<div class="d-flex justify-content-between" id="my_bottom_corners">
-			<img src="img/corner2_bottom_start.png" style="width:20px;height:20px;" alt="corner icon">
-			<img src="img/corner2_bottom_end.png" style="width:20px;height:20px;" alt="corner icon">
-		</div>
-
-		
 		<!-- icons & certificates -->	
 		<div id="my_icons">
 			<div class="row no-gutters">
@@ -200,7 +121,7 @@
 					<div class="d-flex">						
 						<div class="media">
 							<div class="media-left">
-								<img src="img/demolacie_icon.png" style="width:194px;height:180px;" class="media-object">
+								<img src="img/demolacie_icon.png" style="width:194px;height:180px;" class="media-object" alt="demolition icon">
 							</div>
 							<div class="media-body">
 								<h1 class="media-heading">DEMOLÁCIE</h1>
@@ -235,7 +156,7 @@
 								<button type="button" class="btn my_button_price">CENNÍK</button>
 							</div>
 							<div class="media-right">
-								<img src="img/stavebny_icon.png" style="width:223px;height:179px;" class="media-object">
+								<img src="img/stavebny_icon.png" style="width:223px;height:179px;" class="media-object" alt="dump icon">
 							</div>
 						</div>	
 					</div>			
@@ -265,7 +186,7 @@
 					<div class="d-flex">						
 						<div class="media">
 							<div class="media-left">
-								<img src="img/drvenie_icon.png" style="width:196px;height:160px;" class="media-object">
+								<img src="img/drvenie_icon.png" style="width:196px;height:160px;" class="media-object" alt="crushing icon">
 							</div>
 							<div class="media-body">
 								<h1 class="media-heading">DRVENIE</h1>
@@ -301,7 +222,7 @@
 								<p class="text-right">zberný dvor farebných kovov a železného šrotu,</p>
 							</div>
 							<div class="media-right">
-								<img src="img/kovovy_icon.png" style="width:189px;height:172px;" class="media-object">
+								<img src="img/kovovy_icon.png" style="width:189px;height:172px;" class="media-object" alt="metal waste icon">
 							</div>
 						</div>	
 					</div>			
@@ -327,7 +248,7 @@
 					<div class="d-flex">
 						<div class="media">
 							<div class="media-left">
-								<img src="img/recyklacia_icon.png" style="width:211px;height:176px;" class="media-object">
+								<img src="img/recyklacia_icon.png" style="width:211px;height:176px;" class="media-object" alt="recycling icon">
 							</div>
 							<div class="media-body">
 								<h1 class="media-heading">RECYKLÁCIA</h1>
@@ -361,7 +282,7 @@
 								<p class="text-right">odvoz materiálu, terénne úpravy a pod.</p>
 							</div>
 							<div class="media-right">
-								<img src="img/prenajom_icon.png" style="width:188px;height:169px;" class="media-object">
+								<img src="img/prenajom_icon.png" style="width:188px;height:169px;" class="media-object" alt="rent icon">
 							</div>
 						</div>	
 					</div>			
@@ -388,10 +309,10 @@
 						<div class="media d-flex w-100 align-items-center">
 							<div class="media-body d-flex flex-column align-items-start">
 								<h1 class="media-heading">CERTIFIKÁTY</h1>
-								<h4>v odbore <i>NAKLADANIE S ODPADMI:</i> <b>ISO&nbsp9001:2001, ISO&nbsp14001:2004</b></h4>
+								<h4>v odbore <i>NAKLADANIE S ODPADMI:</i> <b>ISO&nbsp;9001:2001, ISO&nbsp;14001:2004</b></h4>
 							</div>
 							<div class="media-right">
-								<img src="img/certificate_icon.png" style="width:229px;height:93px;" class="media-object">
+								<img src="img/certificate_icon.png" style="width:229px;height:93px;" class="media-object" alt="certificates icon">
 							</div>
 						</div>	
 					</div>
