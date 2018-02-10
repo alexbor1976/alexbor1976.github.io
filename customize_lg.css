@@ -6,7 +6,6 @@ body{
 	background-image: url("img/eisen_background.jpg");
 	background-repeat: no-repeat;
 	background-color: #72706F;
-	overflow-x: hidden;
 	background-size: 100% auto;
 	
 	/* temp settings for testing */
@@ -109,8 +108,8 @@ body{
 
 #my_second_links_bar .my_decoration_icon{
 	top: 349px;
-	min-width: 100%;
 }
+
 
 #my_collection_site{
 	width: 588px;
@@ -176,7 +175,7 @@ body{
 	z-index: 1; /*in order to draw underlying decoration icon deg45_1.png*/
 }
 
-#my_icons .my_decoration_icon2{
+.my_decoration_icon2{
 	position: absolute;	
 	z-index: 1; /*in order to draw underlying decoration icon deg45_1.png*/
 }
@@ -214,7 +213,11 @@ body{
 }
 .my_icons_background_image_anchor{
 	position: relative;
-	height: 0px;
+	height: 1px;
+}
+.my_icons_background_image_anchor2{
+	position: relative;
+	height: 1px;
 }
 .my_button_price{
 	border-radius: 0px;
@@ -243,8 +246,8 @@ body{
 	margin-left: 75px;
 }
 
-#my_demolacie_icon_div .my_decoration_icon{
-	left: 429px;
+#my_demolacie_icon_div .my_icons_background_image_anchor{
+	width: 574px;
 }
 
 
@@ -281,8 +284,10 @@ body{
 #my_drvenie_icon_div h1{
 	margin-top: -6px;
 }
+#my_drvenie_icon_div .my_icons_background_image_anchor{
+	width: 642px;
+}
 #my_drvenie_icon_div .my_decoration_icon{
-	left: 359px;
 	top: -13px;
 }
 
@@ -303,10 +308,7 @@ body{
 	top: 30px;
 	left: -468px;
 }
-#my_kovovy_icon_div .my_decoration_icon2{
-	top: 192px;
-	left: 736px;
-}
+
 
 
 /* recyklacia_ico */
@@ -321,7 +323,12 @@ body{
 #my_recyklacia_icon_div h1{
 	margin-top: 10px;
 }
-
+#my_recyklacia_icon_div .my_icons_background_image_anchor2{
+	width: 462px;
+}
+#my_recyklacia_icon_div .my_decoration_icon2{
+	top: -157px;
+}
 
 
 /* prenajom_icon */
@@ -374,9 +381,7 @@ body{
 }
 
 #my_certificate_icon_div .my_decoration_icon{
-	min-width: 100%;
-	height:140px;
-	top: 116px;
+	top: 117px;
 }
 
 
