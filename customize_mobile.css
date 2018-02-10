@@ -19,11 +19,14 @@ body{
 	
 	/* temp settings for testing */	
 	/* background-size: 701px 464px; */
-	max-width: 701px;
+	/* max-width: 701px; */
 }
 
-.container-fluid {
-	padding: 0px;
+
+/* navbar settings */
+#first_navbar_responsive_space_mobile{
+	width: 13px;
+	flex: 0 1 auto;	/* the space before brand image in navbar */
 }
 
 .navbar{
@@ -32,21 +35,36 @@ body{
 	border-width: 0px;
 	border-radius: 0px;
 	background-color: white;
-	padding-left: 13px;
+	padding-left: 0px;
 	padding-right: 0px;
 	padding-bottom: 11px;
 	-webkit-box-shadow: -1.5px 4.5px 5px rgba(0,0,0,0.25);
 	        box-shadow: -1.5px 4.5px 5px rgba(0,0,0,0.25);
 	position: relative;
 	z-index: 2; /*in order to draw shadow over the my_navbar_mobile_view*/
+	flex-wrap: nowrap;
 }
 
-.navbar-toggler{
-	margin-right: 21px;
+#navbar_toggler_mobile{
+	padding: 0px;
 }
 
 .navbar-brand{
 	padding-top: 0px;
+	margin-left: 2px;
+	margin-right: 2px;
+}
+
+#last_navbar_responsive_space_mobile{
+	width: 35px;
+	flex: 0 1 auto;	/* the space after the button toggler at the end of navbar*/
+	color: yellow;
+}
+
+#middle_navbar_responsive_space_mobile{
+	width: 35px;
+	flex: 0 1 auto;	/* the space between the button toggler and link to english version*/
+	color: red;
 }
 
 #my_link_to_english_mobile{
@@ -54,24 +72,31 @@ body{
 	font-size: 15px;
 	font-weight: 700;
 	text-decoration: underline;	
-	margin-right: 19px;
-	margin-left: 22px;
-	padding-left: 0px;
-	padding-right: 0px;
-	padding-bottom: 11px;
+	padding: 0px;
 }
 
 
-/* upper corners */
-#my_corner{
-	margin-top: 24px;
+/* settings for the rest of content */
+.container-fluid {
+	padding: 0px;
+}
+
+#my_row_content_mobile{
+	position: relative;
+	top: -64px; /* height of navbar	 */
+}
+
+
+/* upper corner*/
+#my_corner_mobile{
+	margin-top: 88px;
 	margin-right: 27px;
 }
 
 
 /* links:	DEMOLÁCIE, STAVEBNÝ ODPAD, DRVENIE, KOVOVÝ ODPAD, PRENÁJOM STROJOV*/
 #my_second_links_bar_mobile{
-	margin-top: 94px; 
+	margin-top: 158px; 
 }
 
 .my_second_links_bar_a{
@@ -94,38 +119,54 @@ body{
 	z-index: 1; /*in order to accept navbar shadow*/
 }
 
-#my_navbar_menu_mobile{
-	padding-top: 27px;
+#my_navbar_menu_empty_place_mobile{
+	height: 64px; /* this is an unvisible place under the navbar */ 
+	flex: 0 0 auto; /* to prevent from hiding items under the navbar */
 }
 
-.my_navbar_menu_a{
+/* an indent before the first menu item */
+#my_navbar_menu_first_indent_mobile{
+	flex: 1 1 24px;
+}
+
+.my_navbar_menu_li_mobile{
+	margin-left: 33px;
+	flex: 1 1 38px;
+}
+.my_navbar_menu_a_mobile{
 	font-size: 14px;
 	font-weight: 400;
 	color: #EDFFAC;
+	line-height: 40%;	
 }
-.my_navbar_submenu_a{
+
+/* an indent before the first submenu item */
+#my_navbar_submenu_upper_indent_mobile{
+	flex: 1 1 13px;
+}
+.my_navbar_submenu_li_mobile{
+	margin-left: 48px;	
+	flex: 1 1 23px;
+}
+.my_navbar_submenu_a_mobile{
 	font-size: 14px;
 	font-weight: 400;
 	color: #EDFFAC;
 }	
-.my_navbar_menu_li{
-	margin-left: 33px;
-	margin-top: -1px;
-	margin-bottom: -1px;
-}
-	
-#my_navbar_submenu{
-	padding-top: 13px;	
-	padding-bottom: 10px;	
+/* an indent under the last submenu item */
+#my_navbar_submenu_bottom_indent_mobile{
+	flex: 1 1 9px;
 }
 
-.my_navbar_submenu_li{
-	margin-left: 48px;	
-	margin-top: -3px;
-	margin-bottom: -2px;
+/* an indent before the bottom panel with phone number*/
+#my_navbar_menu_bottom_indent_mobile{
+	flex: 2 1 20px;
+}
+#my_navbar_menu_bottom_mobile{
+	flex: 1 1 56px;
 }
 
-#my_navbar_menu_phone{
+#my_navbar_menu_phone_mobile{
 	background-color: white;
 	margin-left: 11px;
 	margin-right: 11px;

@@ -4,7 +4,7 @@
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<!-- <meta http-equiv="X-UA-Compatible" content="IE=edge" /> -->
 
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
@@ -21,77 +21,113 @@
 	<!-- ========================================================================================
 				for mobile screens( xs, sm, md )
 		 ======================================================================================== -->
-	<div class="container-fluid d-block d-lg-none d-xl-none">		 
-		<nav class="navbar navbar-expand-lg text-nowrap">
+	<div class="container-fluid d-block d-lg-none d-xl-none h-100">		 
+		<nav class="navbar navbar-expand-lg text-nowrap align-items-center">
 			<!-- header -->
+			<div id="first_navbar_responsive_space_mobile"></div>
+				
 			<a class="navbar-brand" href="#">
 				<img src="img/logo_mobile.png" style="width:168px;height:23px;" alt="logotype">
 			</a>
 			
+			<!-- link to the english version of the site -->
 			<div class="navbar-text ml-auto">		
 				<a href="#" id="my_link_to_english_mobile">EN</a>
 			</div>
+
+			<div id="middle_navbar_responsive_space_mobile"></div>	
 			
 			<!-- toggler -->
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#my_navbar_mobile_view" 
+			<button id="navbar_toggler_mobile" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#my_navbar_mobile_view" 
 					aria-controls="my_navbar_mobile_view" aria-expanded="false" aria-label="Toggle navigation"> 
 				<img src="img/green_arrow.png" style="width:18px;height:14px;" alt="toggler to the mobile menu">
 			</button>
+
+			<!-- the space after the button toggler at the end of navbar -->
+			<div id="last_navbar_responsive_space_mobile"></div>
 		</nav>
 		
 
-		<div class="row no-gutters h-100">
-			<div class="col-4 p-0" id="my_navbar_links_column">
+		<div class="row no-gutters h-100" id="my_row_content_mobile">
+			<div class="col-1 p-0 h-100" id="my_navbar_links_column">
 				<!-- this is column for navbar links -->
-				<div class="navbar-collapse collapse" id="my_navbar_mobile_view">
-					<div class="d-flex flex-column h-100 justify-content-between"> 
-						<div>
-							<ul class="navbar-nav" id="my_navbar_menu_mobile">
-								<li class="nav-item my_navbar_menu_li"><a class="nav-link my_navbar_menu_a" href="#">O NÁS</a></li>
-								<li class="nav-item my_navbar_menu_li"><a class="nav-link my_navbar_menu_a" href="#">SLUŽBY</a></li>
-									<li>
-										<ul class="navbar-nav" id="my_navbar_submenu">
-											<li class="my_navbar_submenu_li"><a class="my_navbar_submenu_a" href="#">Demolácie</a></li>
-											<li class="my_navbar_submenu_li"><a class="my_navbar_submenu_a" href="#">Stavebný odpad</a></li>
-											<li class="my_navbar_submenu_li"><a class="my_navbar_submenu_a" href="#">Drvenie</a></li>
-											<li class="my_navbar_submenu_li"><a class="my_navbar_submenu_a" href="#">Kovový odpad</a></li>
-											<li class="my_navbar_submenu_li"><a class="my_navbar_submenu_a" href="#">Prenájom strojov</a></li>
-										</ul>
-									</li>
-								<li class="nav-item my_navbar_menu_li"><a class="nav-link my_navbar_menu_a" href="#">REFERENCIE</a></li>
-								<li class="nav-item my_navbar_menu_li"><a class="nav-link my_navbar_menu_a" href="#">PONUKA PRÁCE</a></li>
-								<li class="nav-item my_navbar_menu_li"><a class="nav-link my_navbar_menu_a" href="#">KONTAKTY</a></li>
-							</ul>
+				<div class="navbar-collapse collapse h-100" id="my_navbar_mobile_view">
+					<div class="navbar-nav justify-content-between h-100" id="my_navbar_menu_mobile"> 
+						<div id="my_navbar_menu_empty_place_mobile"></div>
+						<div id="my_navbar_menu_first_indent_mobile"></div>
+						
+						<div class="my_navbar_menu_li_mobile">
+							<a class="my_navbar_menu_a_mobile" href="#">O NÁS</a>
+						</div>
+						<div class="my_navbar_menu_li_mobile">
+							<a class="my_navbar_menu_a_mobile" href="#">SLUŽBY</a>
 						</div>
 						
-						<div class="d-flex align-items-center" id="my_navbar_menu_phone">
-							<div>
-								<img src="img/smartphone.png" style="width:12px;height:18px;" alt="phone icon" id="my_phone_pict_mobile">
+							<!-- submenu -->
+							<div id="my_navbar_submenu_upper_indent_mobile"></div>
+							
+							<div class="my_navbar_submenu_li_mobile">
+								<a class="my_navbar_submenu_a_mobile" href="#">Demolácie</a>
 							</div>
-							<div id="my_phone_number_mobile">0917 610 774</div>	
+							<div class="my_navbar_submenu_li_mobile">
+								<a class="my_navbar_submenu_a_mobile" href="#">Stavebný odpad</a>
+							</div>
+							<div class="my_navbar_submenu_li_mobile">
+								<a class="my_navbar_submenu_a_mobile" href="#">Drvenie</a>
+							</div>
+							<div class="my_navbar_submenu_li_mobile">
+								<a class="my_navbar_submenu_a_mobile" href="#">Kovový odpad</a>
+							</div>
+							<div class="my_navbar_submenu_li_mobile">
+								<a class="my_navbar_submenu_a_mobile" href="#">Prenájom strojov</a>
+							</div>
+							
+							<div id="my_navbar_submenu_bottom_indent_mobile"></div>
+						
+
+						<div class="my_navbar_menu_li_mobile">
+							<a class="my_navbar_menu_a_mobile" href="#">REFERENCIE</a>
+						</div>
+						<div class="my_navbar_menu_li_mobile">
+							<a class="my_navbar_menu_a_mobile" href="#">PONUKA PRÁCE</a>
+						</div>
+						<div class="my_navbar_menu_li_mobile">
+							<a class="my_navbar_menu_a_mobile" href="#">KONTAKTY</a>
+						</div>
+
+						
+						<div id="my_navbar_menu_bottom_indent_mobile"></div>
+						
+						<div class="my_navbar_menu_bottom_mobile">
+							<div class="d-flex align-items-center" id="my_navbar_menu_phone_mobile">
+								<div>
+									<img src="img/smartphone.png" style="width:12px;height:18px;" alt="phone icon" id="my_phone_pict_mobile">
+								</div>
+								<div id="my_phone_number_mobile">0917 610 774</div>	
+							</div>
 						</div>
 					</div>	
 				</div>
 			</div>
 			
 			
-			<div class="col-4 h-100">
+			<div class="col">
 				<!-- links:	DEMOLÁCIE, STAVEBNÝ ODPAD, DRVENIE, KOVOVÝ ODPAD, PRENÁJOM STROJOV -->
 				<div id="my_second_links_bar_mobile" role="navigation">
 					<ul class="nav d-flex flex-column">
-						<li class="align-self-center my_second_links_bar_li"><a class="my_second_links_bar_a" href="#">DEMOLÁCIE</a></li>
-						<li class="align-self-center my_second_links_bar_li"><a class="my_second_links_bar_a" href="#">STAVEBNÝ ODPAD</a></li>
-						<li class="align-self-center my_second_links_bar_li"><a class="my_second_links_bar_a" href="#">DRVENIE</a></li>
-						<li class="align-self-center my_second_links_bar_li"><a class="my_second_links_bar_a" href="#">KOVOVÝ ODPAD</a></li>
-						<li class="align-self-center my_second_links_bar_li"><a class="my_second_links_bar_a" href="#">PRENÁJOM STROJOV</a></li>
+						<li class="align-self-center my_second_links_bar_li"><a class="my_second_links_bar_a text-nowrap" href="#">DEMOLÁCIE</a></li>
+						<li class="align-self-center my_second_links_bar_li"><a class="my_second_links_bar_a text-nowrap" href="#">STAVEBNÝ ODPAD</a></li>
+						<li class="align-self-center my_second_links_bar_li"><a class="my_second_links_bar_a text-nowrap" href="#">DRVENIE</a></li>
+						<li class="align-self-center my_second_links_bar_li"><a class="my_second_links_bar_a text-nowrap" href="#">KOVOVÝ ODPAD</a></li>
+						<li class="align-self-center my_second_links_bar_li"><a class="my_second_links_bar_a text-nowrap" href="#">PRENÁJOM STROJOV</a></li>
 					</ul>
 				</div>
 			</div>
 			
 			
-			<div class="col-4">
+			<div class="col-1">
 				<!-- corner icon -->
-				<div class="d-flex justify-content-end" id="my_corner">
+				<div class="d-flex justify-content-end" id="my_corner_mobile">
 					<img src="img/corner2_end_mobile.png" style="width:20px;height:20px;" alt="corner icon">
 				</div>
 			</div>
