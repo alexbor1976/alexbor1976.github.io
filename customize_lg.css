@@ -3,10 +3,10 @@ body{
 	color: white;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 16px;
-	/* background-image: url("img/eisen_background.jpg"); */
-	/* background-repeat: no-repeat; */
+	background-image: url("img/eisen_background.jpg");
+	background-repeat: no-repeat;
 	background-color: #72706F;
-	/* background-size: 100% auto;; */
+	/* background-size: 100% auto; */
 	
 	/* temp settings for testing */
 	background-size: 1200px 1091px;
@@ -382,12 +382,6 @@ body{
 #my_gmap{
 	height: 481px;
 }
-
-#my_gmap iframe{
-	/* -webkit-filter: grayscale(100%); */
-    /* filter: grayscale(100%); */
-}
-
 
 /* footer */
 #my_footer{
