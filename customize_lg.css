@@ -6,11 +6,11 @@ body{
 	background-image: url("img/eisen_background.jpg");
 	background-repeat: no-repeat;
 	background-color: #72706F;
-	/* background-size: 100% auto; */
+	background-size: 100% auto;
 	
 	/* temp settings for testing */
-	background-size: 1200px 1091px;
-	max-width: 1200px;
+	/* background-size: 1200px 1091px; */
+	/* max-width: 1200px; */
 }
 
 .container-fluid {
@@ -213,6 +213,7 @@ body{
 }
 .my_icons_background_image_anchor{
 	position: relative;
+	height: 0px;
 }
 .my_button_price{
 	border-radius: 0px;
@@ -263,14 +264,13 @@ body{
 
 #my_stavebny_icon_div .my_decoration_icon{
 	top: 105px;
-	left: -397px;
+	left: -267px;
 }
 
 
 /* drvenie_icon */
 #my_drvenie_icon_div .media{
 	padding-top: 71px;
-	padding-bottom: 69px;
 	padding-bottom: 79px;
 }
 #my_drvenie_icon_div .media-object{
@@ -300,7 +300,7 @@ body{
 }
 #my_kovovy_icon_div .my_decoration_icon{
 	top: 30px;
-	left: -525px;
+	left: -468px;
 }
 #my_kovovy_icon_div .my_decoration_icon2{
 	top: 192px;
@@ -334,7 +334,7 @@ body{
 }
 #my_prenajom_icon_div .my_decoration_icon{
 	top: -173px;
-	left: -499px;
+	left: -344px;
 }
 
 
@@ -363,6 +363,7 @@ body{
 
 #my_certificate_icon_div h1{
 	color: white;
+	font-size: 36px;
 }
 
 #my_certificate_icon_div h4{
@@ -395,6 +396,7 @@ body{
 	font-size: 24px;
 	font-weight: 800;
 	padding-top: 70px;
+	padding-bottom: 3px;
 }
 #my_footer a{
 	color: white;
@@ -405,6 +407,9 @@ body{
 	list-style-type: none;
 	margin: 0px;
 	padding: 0px;
+}
+#my_footer li{
+	padding-bottom: 7px;
 }
 #my_footer .btn{
 	color: white;
@@ -417,7 +422,7 @@ body{
 	padding: 0px;
 	height: 30px;
 	width: 159px;
-	margin-top: 32px;
+	margin-top: 24px;
 }
 .my_extra_bold{
 	color: white;
@@ -437,7 +442,7 @@ body{
 
 /* footer divider line */
 #my_footer_divider_line{
-	margin-top: 61px;
+	margin-top: 52px;
 	margin-bottom: 0px;
 	margin-right: 90px;
 	margin-left: 90px;
@@ -456,4 +461,5 @@ body{
 }
 #my_footer_copyright_section p{
 	margin: 0px;
+	color: white;
 }

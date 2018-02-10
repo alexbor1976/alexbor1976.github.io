@@ -19,7 +19,7 @@ body{
 	
 	/* temp settings for testing */	
 	/* background-size: 701px 464px; */
-	/* max-width: 701px; */
+	max-width: 701px;
 }
 
 .container-fluid {
@@ -35,8 +35,8 @@ body{
 	padding-left: 13px;
 	padding-right: 0px;
 	padding-bottom: 11px;
-	-webkit-box-shadow: -1.5px 2.598px 5px rgba(0,0,0,0.15);
-	        box-shadow: -1.5px 2.598px 5px rgba(0,0,0,0.15);
+	-webkit-box-shadow: -1.5px 4.5px 5px rgba(0,0,0,0.25);
+	        box-shadow: -1.5px 4.5px 5px rgba(0,0,0,0.25);
 	position: relative;
 	z-index: 2; /*in order to draw shadow over the my_navbar_mobile_view*/
 }
@@ -71,7 +71,7 @@ body{
 
 /* links:	DEMOLÁCIE, STAVEBNÝ ODPAD, DRVENIE, KOVOVÝ ODPAD, PRENÁJOM STROJOV*/
 #my_second_links_bar_mobile{
-	margin-top: 50px; 
+	margin-top: 94px; 
 }
 
 .my_second_links_bar_a{
@@ -98,10 +98,15 @@ body{
 	padding-top: 27px;
 }
 
-.my_navbar_menu_a, .my_navbar_submenu_a{
-	font-size: 13px;
-	font-weight: 600;
-	color: #EEFFDF;
+.my_navbar_menu_a{
+	font-size: 14px;
+	font-weight: 400;
+	color: #EDFFAC;
+}
+.my_navbar_submenu_a{
+	font-size: 14px;
+	font-weight: 400;
+	color: #EDFFAC;
 }	
 .my_navbar_menu_li{
 	margin-left: 33px;
@@ -130,7 +135,7 @@ body{
 }
 
 #my_phone_number_mobile{
-	color: #7CBC00;
+	color: #86AE33;
 	font-weight: 700;
 }
 
