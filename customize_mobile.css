@@ -115,7 +115,7 @@ body{
 	background-color: #7CBC00;
 	width: 222px;
 	height: 400px;
-	position: relative;
+	position: absolute;
 	z-index: 1; /*in order to accept navbar shadow*/
 }
 
