@@ -58,13 +58,11 @@ body{
 #last_navbar_responsive_space_mobile{
 	width: 35px;
 	flex: 0 1 auto;	/* the space after the button toggler at the end of navbar*/
-	color: yellow;
 }
 
 #middle_navbar_responsive_space_mobile{
-	width: 35px;
+	width: 33px;
 	flex: 0 1 auto;	/* the space between the button toggler and link to english version*/
-	color: red;
 }
 
 #my_link_to_english_mobile{
@@ -96,17 +94,22 @@ body{
 
 /* links:	DEMOLÁCIE, STAVEBNÝ ODPAD, DRVENIE, KOVOVÝ ODPAD, PRENÁJOM STROJOV*/
 #my_second_links_bar_mobile{
-	margin-top: 158px; 
+
 }
 
-.my_second_links_bar_a{
+#my_second_links_bar_mobile_empty_space{
+	margin-top: 64px; /* to prevent from hiding items under the navbar */
+	flex: 0 1 94px; /* responsive height */
+}
+
+.my_second_links_bar_a_mobile{
 	color: #242629;
 	font-size: 17px;
 	font-weight: 800;
 }
 
-.my_second_links_bar_li{
-	margin-bottom: 11px;
+.my_second_links_bar_li_mobile{
+	flex: 0 1 36px; /* responsive height */
 }
 
 
@@ -120,33 +123,33 @@ body{
 }
 
 #my_navbar_menu_empty_place_mobile{
-	height: 64px; /* this is an unvisible place under the navbar */ 
-	flex: 0 0 auto; /* to prevent from hiding items under the navbar */
+	flex: 0 0 64px; /* to prevent from hiding items under the navbar */
 }
 
 /* an indent before the first menu item */
 #my_navbar_menu_first_indent_mobile{
-	flex: 1 1 24px;
+	flex: 1 1 36px;
 }
 
 .my_navbar_menu_li_mobile{
 	margin-left: 33px;
 	flex: 1 1 38px;
+	line-height: 0.8rem;	
 }
 .my_navbar_menu_a_mobile{
 	font-size: 14px;
 	font-weight: 400;
 	color: #EDFFAC;
-	line-height: 40%;	
 }
 
 /* an indent before the first submenu item */
 #my_navbar_submenu_upper_indent_mobile{
-	flex: 1 1 13px;
+	flex: 1 1 5px;
 }
 .my_navbar_submenu_li_mobile{
 	margin-left: 48px;	
 	flex: 1 1 23px;
+	line-height: 0.8rem;	
 }
 .my_navbar_submenu_a_mobile{
 	font-size: 14px;
@@ -155,7 +158,7 @@ body{
 }	
 /* an indent under the last submenu item */
 #my_navbar_submenu_bottom_indent_mobile{
-	flex: 1 1 9px;
+	flex: 1 1 12px;
 }
 
 /* an indent before the bottom panel with phone number*/

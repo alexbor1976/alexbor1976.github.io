@@ -4,6 +4,7 @@
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="this is a test project made for demonstration purposes only">
 	<!-- <meta http-equiv="X-UA-Compatible" content="IE=edge" /> -->
 
 	<!-- Bootstrap CSS -->
@@ -21,9 +22,9 @@
 	<!-- ========================================================================================
 				for mobile screens( xs, sm, md )
 		 ======================================================================================== -->
-	<!-- this is column for navbar links -->
+	<!-- this is column for navbar links, beyond the container to take 100% of height -->
 	<div class="navbar-collapse collapse h-100" id="my_navbar_mobile_view">
-		<div class="navbar-nav justify-content-between h-100" id="my_navbar_menu_mobile"> 
+		<div class="navbar-nav justify-content-between h-100" id="my_navbar_menu_mobile" role="navigation"> 
 			<div id="my_navbar_menu_empty_place_mobile"></div>
 			<div id="my_navbar_menu_first_indent_mobile"></div>
 			
@@ -108,22 +109,22 @@
 		</nav>
 		
 
-		<div class="row no-gutters" id="my_row_content_mobile">
-			<div class="col-1 p-0" id="my_navbar_links_column">
-				
+		<div class="row no-gutters h-100" id="my_row_content_mobile">
+			<div class="col-1 p-0">
+				<!-- just for centering the menu below -->
 			</div>
 			
 			
-			<div class="col">
+			<div class="col-10 h-100">
 				<!-- links:	DEMOLÁCIE, STAVEBNÝ ODPAD, DRVENIE, KOVOVÝ ODPAD, PRENÁJOM STROJOV -->
-				<div id="my_second_links_bar_mobile" role="navigation">
-					<ul class="nav d-flex flex-column">
-						<li class="align-self-center my_second_links_bar_li"><a class="my_second_links_bar_a text-nowrap" href="#">DEMOLÁCIE</a></li>
-						<li class="align-self-center my_second_links_bar_li"><a class="my_second_links_bar_a text-nowrap" href="#">STAVEBNÝ ODPAD</a></li>
-						<li class="align-self-center my_second_links_bar_li"><a class="my_second_links_bar_a text-nowrap" href="#">DRVENIE</a></li>
-						<li class="align-self-center my_second_links_bar_li"><a class="my_second_links_bar_a text-nowrap" href="#">KOVOVÝ ODPAD</a></li>
-						<li class="align-self-center my_second_links_bar_li"><a class="my_second_links_bar_a text-nowrap" href="#">PRENÁJOM STROJOV</a></li>
-					</ul>
+				<div class="d-flex flex-column align-items-center h-100" id="my_second_links_bar_mobile" role="navigation">
+					<div id="my_second_links_bar_mobile_empty_space"></div>
+					
+					<div class="my_second_links_bar_li_mobile"><a class="my_second_links_bar_a_mobile text-nowrap" href="#">DEMOLÁCIE</a></div>
+					<div class="my_second_links_bar_li_mobile"><a class="my_second_links_bar_a_mobile text-nowrap" href="#">STAVEBNÝ ODPAD</a></div>
+					<div class="my_second_links_bar_li_mobile"><a class="my_second_links_bar_a_mobile text-nowrap" href="#">DRVENIE</a></div>
+					<div class="my_second_links_bar_li_mobile"><a class="my_second_links_bar_a_mobile text-nowrap" href="#">KOVOVÝ ODPAD</a></div>
+					<div class="my_second_links_bar_li_mobile"><a class="my_second_links_bar_a_mobile text-nowrap" href="#">PRENÁJOM STROJOV</a></div>
 				</div>
 			</div>
 			
@@ -435,7 +436,7 @@
 					<div class="d-flex justify-content-center">
 						<div class="media d-flex w-100 align-items-center">
 							<div class="media-body d-flex flex-column align-items-start">
-								<h1 class="media-heading">CERTIfiKÁTY</h1>
+								<h1 class="media-heading">CERTIFIKÁTY</h1>
 								<h4>v odbore <i>NAKLADANIE S ODPADMI:</i> <b>ISO&nbsp;9001:2001, ISO&nbsp;14001:2004</b></h4>
 							</div>
 							<div class="media-right">
@@ -461,7 +462,7 @@
 		<!--large screen, footer -->
 		<div id="my_footer">
 			<!-- links -->
-			<div class="row no-gutters" id="my_footer_links">
+			<div class="row no-gutters" id="my_footer_links" role="navigation">
 				<!-- first column -->
 				<div class="col-3" id="my_footer_eisen">
 					<h1>EISEN s.r.o.</h1>
