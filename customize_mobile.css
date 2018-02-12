@@ -1,21 +1,8 @@
 /* for mobile screens( xs, sm, md ) */
-html{
-	height: 100%;
-	margin: 0; 
-	padding: 0;
-}
-
 body{
-	color: white;
-	font-family: 'Open Sans', sans-serif;
-	font-size: 16px;
 	background-image: url("img/eisen_background_mobile.jpg");
-	background-repeat: no-repeat;
 	background-size: 100% 100%;
-	background-color: #72706F;
 	height: 100%;
-	margin: 0; 
-	padding: 0;
 
 	/* temp settings for testing */	
 	/* background-size: 701px 464px; */
