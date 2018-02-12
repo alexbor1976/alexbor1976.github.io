@@ -1,8 +1,6 @@
 /* for mobile screens( xs, sm, md ) */
 body{
 	background-image: url("img/eisen_background_mobile.jpg");
-	background-size: 100% 100%;
-	height: 100%;
 
 	/* temp settings for testing */	
 	/* background-size: 701px 464px; */

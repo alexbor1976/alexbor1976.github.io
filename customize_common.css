@@ -11,6 +11,8 @@ body{
 	background-image: url("img/eisen_background.jpg");
 	background-repeat: no-repeat;
 	background-color: #72706F;
+	background-size: 100% auto;
+	height: auto;
 	margin: 0; 
 	padding: 0;
 }
