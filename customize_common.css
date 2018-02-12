@@ -92,6 +92,10 @@ body{
 	margin-top: 19px;
 }
 
+#my_second_links_bar li{
+	margin-bottom: 17px;
+}
+
 #my_second_links_bar a{
 	color: #4e4e4e;
 	font-size: 17px;
@@ -100,18 +104,17 @@ body{
 	margin-left: 13px;
 }
 
-
-/* panels: ZBERNÝ DVOR, STAVEBNÉHO ODPADU, + ODVOZ*/
-#my_forward_keywords{
-	margin-top: 168px;
-	position: relative;
-	z-index: 2; /*in order to draw underlying decoration - strips over the background image*/	
-}
-
 #my_second_links_bar .my_decoration_icon{
 	top: 368px;
 }
 
+
+/* panels: ZBERNÝ DVOR, STAVEBNÉHO ODPADU, + ODVOZ*/
+#my_forward_keywords{
+	margin-top: 151px;
+	position: relative;
+	z-index: 2; /*in order to draw underlying decoration - strips over the background image*/	
+}
 
 #my_collection_site{
 	width: 588px;

@@ -21,130 +21,9 @@
   
 <body>
 	<!-- ========================================================================================
-				for mobile screens( xs, sm, md )
+				both for for large & mobile screens
 		 ======================================================================================== -->
-	<!-- this is column for navbar links, beyond the container to take 100% of height -->
-	<div class="navbar-collapse collapse h-100" id="my_navbar_mobile_view">
-		<div class="navbar-nav justify-content-between h-100" id="my_navbar_menu_mobile" role="navigation"> 
-			<div id="my_navbar_menu_empty_place_mobile"></div>
-			<div id="my_navbar_menu_first_indent_mobile"></div>
-			
-			<div class="my_navbar_menu_li_mobile">
-				<a class="my_navbar_menu_a_mobile" href="#">O NÁS</a>
-			</div>
-			<div class="my_navbar_menu_li_mobile">
-				<a class="my_navbar_menu_a_mobile" href="#">SLUŽBY</a>
-			</div>
-			
-				<!-- submenu -->
-				<div id="my_navbar_submenu_upper_indent_mobile"></div>
-				
-				<div class="my_navbar_submenu_li_mobile">
-					<a class="my_navbar_submenu_a_mobile" href="#">Demolácie</a>
-				</div>
-				<div class="my_navbar_submenu_li_mobile">
-					<a class="my_navbar_submenu_a_mobile" href="#">Stavebný odpad</a>
-				</div>
-				<div class="my_navbar_submenu_li_mobile">
-					<a class="my_navbar_submenu_a_mobile" href="#">Drvenie</a>
-				</div>
-				<div class="my_navbar_submenu_li_mobile">
-					<a class="my_navbar_submenu_a_mobile" href="#">Kovový odpad</a>
-				</div>
-				<div class="my_navbar_submenu_li_mobile">
-					<a class="my_navbar_submenu_a_mobile" href="#">Prenájom strojov</a>
-				</div>
-				
-				<div id="my_navbar_submenu_bottom_indent_mobile"></div>
-			
-
-			<div class="my_navbar_menu_li_mobile">
-				<a class="my_navbar_menu_a_mobile" href="#">REFERENCIE</a>
-			</div>
-			<div class="my_navbar_menu_li_mobile">
-				<a class="my_navbar_menu_a_mobile" href="#">PONUKA PRÁCE</a>
-			</div>
-			<div class="my_navbar_menu_li_mobile">
-				<a class="my_navbar_menu_a_mobile" href="#">KONTAKTY</a>
-			</div>
-
-			
-			<div id="my_navbar_menu_bottom_indent_mobile"></div>
-			
-			<div class="my_navbar_menu_bottom_mobile">
-				<div class="d-flex align-items-center" id="my_navbar_menu_phone_mobile">
-					<div>
-						<img src="img/smartphone.png" style="width:12px;height:18px;" alt="phone icon" id="my_phone_pict_mobile">
-					</div>
-					<div id="my_phone_number_mobile">0917 610 774</div>	
-				</div>
-			</div>
-		</div>	
-	</div>
-		 
-		 
-	<div class="container-fluid d-block d-lg-none d-xl-none h-100">		 
-		<nav class="navbar navbar-expand-lg text-nowrap align-items-center">
-			<!-- header -->
-			<div id="first_navbar_responsive_space_mobile"></div>
-				
-			<a class="navbar-brand" href="#">
-				<img src="img/logo_mobile.png" style="width:168px;height:23px;" alt="logotype">
-			</a>
-			
-			<!-- link to the english version of the site -->
-			<div class="navbar-text ml-auto">		
-				<a href="#" id="my_link_to_english_mobile">EN</a>
-			</div>
-
-			<div id="middle_navbar_responsive_space_mobile"></div>	
-			
-			<!-- toggler -->
-			<button id="navbar_toggler_mobile" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#my_navbar_mobile_view" 
-					aria-controls="my_navbar_mobile_view" aria-expanded="false" aria-label="Toggle navigation"> 
-				<img src="img/green_arrow.png" style="width:18px;height:14px;" alt="toggler to the mobile menu">
-			</button>
-
-			<!-- the space after the button toggler at the end of navbar -->
-			<div id="last_navbar_responsive_space_mobile"></div>
-		</nav>
-		
-
-		<div class="row no-gutters h-100" id="my_row_content_mobile">
-			<div class="col-1 p-0">
-				<!-- just for centering the menu below -->
-			</div>
-			
-			
-			<div class="col-10 h-100">
-				<!-- links:	DEMOLÁCIE, STAVEBNÝ ODPAD, DRVENIE, KOVOVÝ ODPAD, PRENÁJOM STROJOV -->
-				<div class="d-flex flex-column align-items-center h-100" id="my_second_links_bar_mobile" role="navigation">
-					<div id="my_second_links_bar_mobile_empty_space"></div>
-					
-					<div class="my_second_links_bar_li_mobile"><a class="my_second_links_bar_a_mobile text-nowrap" href="#">DEMOLÁCIE</a></div>
-					<div class="my_second_links_bar_li_mobile"><a class="my_second_links_bar_a_mobile text-nowrap" href="#">STAVEBNÝ ODPAD</a></div>
-					<div class="my_second_links_bar_li_mobile"><a class="my_second_links_bar_a_mobile text-nowrap" href="#">DRVENIE</a></div>
-					<div class="my_second_links_bar_li_mobile"><a class="my_second_links_bar_a_mobile text-nowrap" href="#">KOVOVÝ ODPAD</a></div>
-					<div class="my_second_links_bar_li_mobile"><a class="my_second_links_bar_a_mobile text-nowrap" href="#">PRENÁJOM STROJOV</a></div>
-				</div>
-			</div>
-			
-			
-			<div class="col-1">
-				<!-- corner icon -->
-				<div class="d-flex justify-content-end" id="my_corner_mobile">
-					<img src="img/corner2_end_mobile.png" style="width:20px;height:20px;" alt="corner icon">
-				</div>
-			</div>
-		</div>
-	</div> <!-- for mobile screens( xs, sm, md )  -->  
-
-	
-	
-	<!-- ========================================================================================
-				for large screens( lg & xl )
-		 ======================================================================================== -->
-	<div class="container-fluid d-none d-lg-block d-xl-block">
+	<div class="container-fluid d-block h-100">
 	
 		<!-- Navigation bar -->
 		<nav class="navbar navbar-expand-lg text-nowrap">
@@ -196,12 +75,12 @@
 
 	
 		<!-- links:	DEMOLÁCIE, STAVEBNÝ ODPAD, DRVENIE, KOVOVÝ ODPAD, PRENÁJOM STROJOV -->
-		<div role="navigation" id="my_second_links_bar">
-			<div class="my_icons_background_image_anchor">
+		<div id="my_second_links_bar" role="navigation">
+			<div class="d-none d-lg-block d-xl-block my_icons_background_image_anchor">
 				<img src="img/eisen_background_strips.png" class="my_decoration_icon" style="width:100%;height:141px;" alt="decoration icon">
 			</div>
-		
-			<ul class="nav d-flex justify-content-center">
+			
+			<ul class="nav d-flex flex-column justify-content-center align-items-center flex-lg-row flex-xl-row">
 				<li><a href="#">DEMOLÁCIE</a></li>
 				<li><a href="#">STAVEBNÝ ODPAD</a></li>
 				<li><a href="#">DRVENIE</a></li>
@@ -209,25 +88,29 @@
 				<li><a href="#">PRENÁJOM STROJOV</a></li>
 			</ul>
 		</div>
+
 		
-	
 		<!-- ZBERNÝ DVOR, STAVEBNÉHO ODPADU, + ODVOZ -->
-		<div class="btn-group-vertical d-flex align-items-end" role="group" id="my_forward_keywords">
-			<button type="button" class="btn" id="my_collection_site">ZBERNÝ DVOR</button>
-			<button type="button" class="btn" id="my_building_waste">STAVEBNÉHO ODPADU</button>
-			<button type="button" class="btn" id="my_removal_plus">+ ODVOZ</button>
+		<div class="d-none d-lg-block d-xl-block ">
+			<div class="btn-group-vertical d-flex align-items-end" role="group" id="my_forward_keywords">
+				<button type="button" class="btn" id="my_collection_site">ZBERNÝ DVOR</button>
+				<button type="button" class="btn" id="my_building_waste">STAVEBNÉHO ODPADU</button>
+				<button type="button" class="btn" id="my_removal_plus">+ ODVOZ</button>
+			</div>
 		</div>
 	
 	
 		<!-- bottom corners:-->
-		<div class="d-flex justify-content-between" id="my_bottom_corners">
-			<img src="img/corner2_bottom_start.png" style="width:20px;height:20px;" alt="corner icon">
-			<img src="img/corner2_bottom_end.png" style="width:20px;height:20px;" alt="corner icon">
+		<div class="d-none d-lg-block d-xl-block ">		
+			<div class="d-none d-lg-block d-xl-block d-flex justify-content-between" id="my_bottom_corners">
+				<img src="img/corner2_bottom_start.png" style="width:20px;height:20px;" alt="corner icon">
+				<img src="img/corner2_bottom_end.png" style="width:20px;height:20px;" alt="corner icon">
+			</div>
 		</div>
-	
+		
 	
 		<!-- icons & certificates -->	
-		<div id="my_icons">
+		<div class="d-none d-lg-block d-xl-block " id="my_icons">
 			<div class="row no-gutters">
 				<div class="col-2 my_empty_space_column">
 					<!-- just empty place, to make some responsive space -->	
@@ -451,7 +334,7 @@
 			
 			
 		<!--large screen, google maps -->
-		<div class="row no-gutters">
+		<div class="d-none d-lg-block d-xl-block " class="row no-gutters">
 			<div class="col">
 				<div class="embed-responsive" id="my_gmap">
 					<!-- google map will be added here from customize.js -->
@@ -461,7 +344,7 @@
 			
 		
 		<!--large screen, footer -->
-		<div id="my_footer">
+		<div class="d-none d-lg-block d-xl-block " id="my_footer">
 			<!-- links -->
 			<div class="row no-gutters" id="my_footer_links" role="navigation">
 				<!-- first column -->
@@ -513,8 +396,7 @@
 				<p>© Copyright - <a href="#"> EISEN s.r.o.</a></p>
 			</div>
 		</div> <!-- <div id="my_footer"> -->
-	</div> <!-- for large screens( lg & xl ) -->
-	
+	</div> <!-- both for for large & mobile screens -->
 	
 	<!-- Optional JavaScript -->
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
