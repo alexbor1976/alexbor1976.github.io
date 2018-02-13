@@ -155,7 +155,16 @@ function setBackgroundMinHeight(){
 		$('body').css('background-size', '100% ' + text_min_height);
 	} else {
 		//enable stretching of the background image in height automatically
-		$('body').css('background-size', '100% 100%');
+		var viewport_width = $( window ).width();
+		if(viewport_width <= 991){
+			//mobile settings for scretching
+			$('body').css('background-size', '100% 100%');
+			
+		} else{
+			//desktop settings for scretching
+			$('body').css('background-size', '100% auto');
+			
+		}
 	}
 	
 	// console.log('background-size = ' + $('body').css('background-size'));
