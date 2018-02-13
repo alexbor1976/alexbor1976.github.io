@@ -1,6 +1,7 @@
 /* for large screens( lg & xl ) */
 body{
 	background-image: url("img/eisen_background.jpg");
+	background-size: 100% auto;
 	
 	/* temp settings for testing */
 	/* background-size: 1200px 1091px; */

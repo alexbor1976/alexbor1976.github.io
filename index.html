@@ -23,50 +23,68 @@
 	<!-- ========================================================================================
 				both for for large & mobile screens
 		 ======================================================================================== -->
-	<div class="container-fluid d-block h-100">
-	
-		<!-- Navigation bar -->
-		<nav class="navbar navbar-expand-lg text-nowrap">
-			<!-- header -->
-			<a class="navbar-brand" href="#">
-				<img src="img/logo.png" style="width:220px;height:29px;" alt="logotype">
-			</a>
+	<!-- this is column for navbar links, beyond the container to take 100% of height -->
+	<div class="navbar-collapse collapse h-100 w-100" id="my_navbar_target">
+		<div class="h-100 w-100" id="my_navbar_target_shadow"></div>
+		<div class="navbar-nav justify-content-between h-100" id="my_navbar_menu_mobile" role="navigation"> 
+			<!-- the content of this menu will be copied from #my_navbar_menu & #my_second_links_bar by the customize.js -->
+		</div>
+	</div>
+		
+	<!-- Navigation bar -->
+	<nav class="navbar navbar-expand-lg flex-nowrap text-nowrap align-items-center w-100" id="my_navbar">
+		<!-- header -->
+		<a class="navbar-brand" href="#">
+			<img src="img/logo.png" style="width:220px;height:29px;" alt="logotype">
+		</a>
+		
+		<!-- navbar links -->
+		<div class="navbar-collapse collapse" id="my_navbar_menu_div">
+			<ul class="navbar-nav nav-fill w-100" id="my_navbar_menu">
+				<!-- just empty space, about 125px wide-->
+				<li class="nav-item"></li>
+				<li class="nav-item"></li>
+				<li class="nav-item"></li>
+				<li class="nav-item"></li>
 			
-			<!-- navbar links -->
-			<div class="navbar-collapse collapse" id="my_navbar">
-				<ul class="navbar-nav nav-fill" id="my_navbar_menu">
-					<!-- just empty space, about 125px wide-->
-					<li class="nav-item"></li>
-					<li class="nav-item"></li>
-					<li class="nav-item"></li>
-					<li class="nav-item"></li>
+				<!-- functional links -->
+				<li class="nav-item"><a class="nav-link" href="#">O NÁS</a></li>
+				<li class="nav-item"><a class="nav-link" href="#">SLUŽBY</a></li>
+				<li class="nav-item"><a class="nav-link" href="#">REFERENCIE</a></li>
+				<li class="nav-item"><a class="nav-link" href="#">PONUKA PRÁCE</a></li>
+				<li class="nav-item"><a class="nav-link" href="#">KONTAKTY</a></li>
 				
-					<!-- functional links -->
-					<li class="nav-item"><a class="nav-link" href="#">O NÁS</a></li>
-					<li class="nav-item"><a class="nav-link" href="#">SLUŽBY</a></li>
-					<li class="nav-item"><a class="nav-link" href="#">REFERENCIE</a></li>
-					<li class="nav-item"><a class="nav-link" href="#">PONUKA PRÁCE</a></li>
-					<li class="nav-item"><a class="nav-link" href="#">KONTAKTY</a></li>
-					
-					<!-- just empty space, about 100px wide-->
-					<li class="nav-item"></li>
-					<li class="nav-item"></li>
-					<li class="nav-item"></li>
-				</ul>
-			</div>
+				<!-- just empty space, about 100px wide-->
+				<li class="nav-item"></li>
+				<li class="nav-item"></li>
+				<li class="nav-item"></li>
+			</ul>
+		</div>
+		
+		<div class="d-none d-lg-block d-xl-block">		
+			<span>
+				<img src="img/smartphone.png" style="width:12px;height:18px;" alt="phone icon" id="my_phone_pict">
+			</span>
+			<span id="my_phone_number">0911 915 593</span>
+		</div>	
 			
-			<div class="navbar-text">		
-				<span>
-					<img src="img/smartphone.png" style="width:12px;height:18px;" alt="phone icon" id="my_phone_pict">
-				</span>
-				<span id="my_phone_number">0911 915 593</span>
-				<span> 
-					<a href="#" id="my_link_to_english">EN</a>
-				</span>
-			</div>
-		</nav>
+		<div>					
+			<span> 
+				<a href="#" id="my_link_to_english">EN</a>
+			</span>
+		
+			<!-- navbar toggler -->
+			<button class="navbar-toggler" id="navbar_toggler_mobile" type="button" data-toggle="collapse" 
+					data-target="#my_navbar_target" aria-controls="my_navbar_target" 
+					aria-expanded="false" aria-label="Toggle navigation"> 
+				<img src="img/green_arrow.png" style="width:18px;height:14px;" alt="toggler to the mobile menu">
+			</button>
+		</div>
+	</nav>
 
-
+	
+	<!-- page body -->	
+	<div class="container-fluid d-block h-100">
 		<!-- upper corners: -->
 		<div class="d-flex justify-content-between" id="my_upper_corners">
 			<img src="img/corner2_start.png" style="width:20px;height:20px;" alt="corner icon">
@@ -102,7 +120,7 @@
 	
 		<!-- bottom corners:-->
 		<div class="d-none d-lg-block d-xl-block ">		
-			<div class="d-none d-lg-block d-xl-block d-flex justify-content-between" id="my_bottom_corners">
+			<div class="d-flex justify-content-between" id="my_bottom_corners">
 				<img src="img/corner2_bottom_start.png" style="width:20px;height:20px;" alt="corner icon">
 				<img src="img/corner2_bottom_end.png" style="width:20px;height:20px;" alt="corner icon">
 			</div>
@@ -334,7 +352,7 @@
 			
 			
 		<!--large screen, google maps -->
-		<div class="d-none d-lg-block d-xl-block " class="row no-gutters">
+		<div class="d-none d-lg-block d-xl-block row no-gutters">
 			<div class="col">
 				<div class="embed-responsive" id="my_gmap">
 					<!-- google map will be added here from customize.js -->
@@ -344,7 +362,7 @@
 			
 		
 		<!--large screen, footer -->
-		<div class="d-none d-lg-block d-xl-block " id="my_footer">
+		<div class="d-none d-lg-block d-xl-block" id="my_footer">
 			<!-- links -->
 			<div class="row no-gutters" id="my_footer_links" role="navigation">
 				<!-- first column -->
