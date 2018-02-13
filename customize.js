@@ -1,3 +1,5 @@
+var min_height = 401; //px
+
 // initialization of my_navbar_menu_mobile
 $('document').ready(initNavbarMobileMenu());
 	
@@ -37,7 +39,7 @@ function initNavbarMobileMenu(){
 	var items_counter = {counter:0, threshold:2}; //to calculate when we have to insert submenu
 
 	var global_menu_items_count = $('#my_navbar_menu .nav-link').length;	
-	console.log('global_menu_items_count = ' + global_menu_items_count);
+	// console.log('global_menu_items_count = ' + global_menu_items_count);
 	
 	//forming initial empty space at the beginning of the #my_navbar_menu_mobile menu 
 	$('#my_navbar_menu_mobile').append('<div id="my_navbar_menu_empty_place_mobile"></div>');
@@ -45,17 +47,15 @@ function initNavbarMobileMenu(){
 	
 	//forming general menu items from #my_navbar_menu
 	$('#my_navbar_menu .nav-link').each(function(){
-		console.log($(this));
-		
 		items_counter.counter++;
-		console.log('items_counter.counter = ' + items_counter.counter);
+		// console.log('items_counter.counter = ' + items_counter.counter);
 
 		//get the current item information
 		item.name = $(this).text();
-		console.log('item.name = ' + item.name);
+		// console.log('item.name = ' + item.name);
 		
 		item.href = $(this).attr('href');
-		console.log('item.href = ' + item.href);
+		// console.log('item.href = ' + item.href);
 
 		//form the current item of general part of the menu - from #my_navbar_menu
 		$('#my_navbar_menu_mobile').append(
@@ -73,12 +73,12 @@ function initNavbarMobileMenu(){
 	
 	//forming bottom part of the #my_navbar_menu_mobile menu: phone number & pict
 	if(items_counter.counter == global_menu_items_count){
-		console.log('adding final stub - phone number & pict');
+		// console.log('adding final stub - phone number & pict');
 		
 		$('#my_navbar_menu_mobile').append(
 		'<div id="my_navbar_menu_bottom_indent_mobile"></div>'+
 		
-		'<div id="my_navbar_menu_bottom_mobile">'+
+		'<div class="align-self-center" id="my_navbar_menu_bottom_mobile">'+
 			'<div class="d-flex align-items-center" id="my_navbar_menu_phone_mobile">'+
 				'<div>'+
 					'<img src="img/smartphone.png" style="width:12px;height:18px;" alt="phone icon" id="my_phone_pict_mobile">'+
@@ -87,32 +87,38 @@ function initNavbarMobileMenu(){
 			'</div>'+
 		'</div>');
 	}
+	
+	//set minimal sizes for menu & background image
+	setMinHeight();
+	
+	//on resize check/set background height
+	$(window).on('resize', function(){
+		setBackgroundMinHeight();
+	});
 }
 
 
 // the content of this submenu will be copied from #my_second_links_bar to my_navbar_menu_mobile
 function initNavbarMobileSubMenu(){
-	console.log('adding the submenu');
+	// console.log('adding the submenu');
 			
 	var item = {name:' ', href:'"#"'}; //temp variable with name & href of the menu item
 
 	var submenu_items_count = $('#my_second_links_bar li').length;	
-	console.log('submenu_items_count = ' + submenu_items_count);
+	// console.log('submenu_items_count = ' + submenu_items_count);
 
 	//forming initial empty space at the beginning of the submenu
 	$('#my_navbar_menu_mobile').append('<div id="my_navbar_submenu_upper_indent_mobile"></div>');
 
 	// forming the submenu items	
 	$('#my_second_links_bar li').each(function(){
-		console.log($(this));
-		
 		//get the current item information
 		item.name = $(this).text();
 		item.name = item.name.charAt(0) + item.name.substr(1).toLowerCase();
-		console.log('item.name = ' + item.name);
+		// console.log('item.name = ' + item.name);
 		
 		item.href = $(this).attr('href');
-		console.log('item.href = ' + item.href);
+		// console.log('item.href = ' + item.href);
 
 		//form the current item of general part of the menu - from #my_navbar_menu
 		$('#my_navbar_menu_mobile').append(
@@ -126,7 +132,33 @@ function initNavbarMobileSubMenu(){
 }
 
 
+//sets min-height property to some elements related to my_navbar_menu_mobile
+function setMinHeight(){
+	var text_min_height = min_height.toString() + 'px';
+	
+	$('body').css('min-height', text_min_height);
+	$('#my_navbar_target_shadow').css('min-height', text_min_height);
+	$('#my_navbar_menu_mobile').css('min-height', text_min_height);
+	
+	setBackgroundMinHeight();
+}
 
+//this function called once from setMinHeight() at the beginning and each time when viewport change its size
+function setBackgroundMinHeight(){
+	var viewport_height = $( window ).height();
+	// console.log('viewport_height = ' + viewport_height);
+	// console.log('background-size = ' + $('body').css('background-size'));
+	
+	if(viewport_height < min_height){
+		var text_min_height = min_height.toString() + 'px';
+		$('body').css('background-size', '100% ' + text_min_height);
+	} else {
+		//enable stretching in height
+		$('body').css('background-size', '100% 100%');
+	}
+	
+	// console.log('background-size = ' + $('body').css('background-size'));
+}
 
 
 

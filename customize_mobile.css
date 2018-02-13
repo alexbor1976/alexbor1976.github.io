@@ -1,13 +1,13 @@
 /* for mobile screens( xs, sm, md ) */
 body{
 	background-image: url("img/eisen_background_mobile.jpg");
-	/* background-size: 100% 100%; */
-	background-size: cover;
-	
+	background-size: 100% 100%;	
+
 	/* temp settings for testing */	
 	/* background-size: 701px 464px; */
 	/* max-width: 701px; */
 }
+
 
 /* links:	DEMOLÁCIE, STAVEBNÝ ODPAD, DRVENIE, KOVOVÝ ODPAD, PRENÁJOM STROJOV*/
 #my_second_links_bar ul{
