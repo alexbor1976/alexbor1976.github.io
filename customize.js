@@ -1,10 +1,9 @@
-var min_height = 401; //px
+var min_height = 405; //constant value for background image & some mobile menus, in px
 
 // initialization of my_navbar_menu_mobile
 $('document').ready(initNavbarMobileMenu());
 	
 	
-
 // google map initialization
 function initMap(){
 	var eisen_location = {lat: 48.18331, lng: 17.923645};
@@ -33,12 +32,12 @@ function initMap(){
 
 
 // initialization of my_navbar_menu_mobile
-// the content of this menu will be copied from #my_navbar_menu & #my_second_links_bar to #my_navbar_menu_mobile
+// the content of #my_navbar_menu_mobile menu will be filled from #my_navbar_menu & #my_second_links_bar
 function initNavbarMobileMenu(){
-	var item = {name:' ', href:'"#"'}; //temp variable with name & href of the menu item
-	var items_counter = {counter:0, threshold:2}; //to calculate when we have to insert submenu
+	var item = {name:' ', href:'"#"'}; //temp variable with a name & href of the menu item to be process
+	var items_counter = {counter:0, threshold:2}; //to calculate when we have to insert our submenu(from #my_second_links_bar)
 
-	var global_menu_items_count = $('#my_navbar_menu .nav-link').length;	
+	// var global_menu_items_count = $('#my_navbar_menu .nav-link').length;	
 	// console.log('global_menu_items_count = ' + global_menu_items_count);
 	
 	//forming initial empty space at the beginning of the #my_navbar_menu_mobile menu 
@@ -52,12 +51,10 @@ function initNavbarMobileMenu(){
 
 		//get the current item information
 		item.name = $(this).text();
-		// console.log('item.name = ' + item.name);
-		
 		item.href = $(this).attr('href');
-		// console.log('item.href = ' + item.href);
 
-		//form the current item of general part of the menu - from #my_navbar_menu
+
+		//form the current item of general part of the #my_navbar_menu_mobile menu
 		$('#my_navbar_menu_mobile').append(
 			'<div class="my_navbar_menu_li_mobile">'+	
 				'<a class="my_navbar_menu_a_mobile" href="' + item.href + '">' + item.name + '</a>' +
@@ -72,7 +69,7 @@ function initNavbarMobileMenu(){
 	});
 	
 	//forming bottom part of the #my_navbar_menu_mobile menu: phone number & pict
-	if(items_counter.counter == global_menu_items_count){
+	if(items_counter.counter == $('#my_navbar_menu .nav-link').length){
 		// console.log('adding final stub - phone number & pict');
 		
 		$('#my_navbar_menu_mobile').append(
@@ -91,7 +88,7 @@ function initNavbarMobileMenu(){
 	//set minimal sizes for menu & background image
 	setMinHeight();
 	
-	//on resize check/set background height
+	//on resize check/set height of the background image for nice looking for screens with small height
 	$(window).on('resize', function(){
 		setBackgroundMinHeight();
 	});
@@ -104,7 +101,7 @@ function initNavbarMobileSubMenu(){
 			
 	var item = {name:' ', href:'"#"'}; //temp variable with name & href of the menu item
 
-	var submenu_items_count = $('#my_second_links_bar li').length;	
+	// var submenu_items_count = $('#my_second_links_bar li').length;	
 	// console.log('submenu_items_count = ' + submenu_items_count);
 
 	//forming initial empty space at the beginning of the submenu
@@ -137,65 +134,30 @@ function setMinHeight(){
 	var text_min_height = min_height.toString() + 'px';
 	
 	$('body').css('min-height', text_min_height);
+	$('#my_navbar_target').css('min-height', text_min_height);
 	$('#my_navbar_target_shadow').css('min-height', text_min_height);
 	$('#my_navbar_menu_mobile').css('min-height', text_min_height);
 	
 	setBackgroundMinHeight();
 }
 
-//this function called once from setMinHeight() at the beginning and each time when viewport change its size
+
+//check/correct min height of the background image
+//this function called once from setMinHeight() at the beginning and each time when the viewport changes its size
 function setBackgroundMinHeight(){
 	var viewport_height = $( window ).height();
 	// console.log('viewport_height = ' + viewport_height);
 	// console.log('background-size = ' + $('body').css('background-size'));
 	
 	if(viewport_height < min_height){
+		//set the minimum height for the background image == the mobile menus heights
 		var text_min_height = min_height.toString() + 'px';
 		$('body').css('background-size', '100% ' + text_min_height);
 	} else {
-		//enable stretching in height
+		//enable stretching of the background image in height automatically
 		$('body').css('background-size', '100% 100%');
 	}
 	
 	// console.log('background-size = ' + $('body').css('background-size'));
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

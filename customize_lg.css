@@ -7,3 +7,17 @@ body{
 	/* background-size: 1200px 1091px; */
 	/* max-width: 1200px; */
 }
+
+
+/* upper corners */
+#my_upper_corners{
+	margin-top: 44px;
+	margin-left: 44px;
+	margin-right: 44px;
+}
+
+
+/* links:	DEMOLÁCIE, STAVEBNÝ ODPAD, DRVENIE, KOVOVÝ ODPAD, PRENÁJOM STROJOV*/
+#my_second_links_bar ul{
+	margin-top: 19px;
+}
